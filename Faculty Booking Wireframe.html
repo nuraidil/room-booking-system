@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Faculty Venue Booking — Lo-Fi Wireframe</title>
+<link rel="stylesheet" href="wf/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- ============ TOP CHROME ============ -->
+    <div class="chrome">
+      <div class="brand">
+        <span class="dot">WF</span>
+        <b>Faculty Venue Booking</b>&nbsp;<span>// lo-fi wireframe</span>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- global time format -->
+      <span class="mono" style="font-size:10px;color:#8f8f8f;">TIME</span>
+      <div class="seg">
+        <button data-chrome="time" data-chrome-time="12">12h</button>
+        <button data-chrome="time" data-chrome-time="24">24h</button>
+      </div>
+
+      <!-- annotation toggle removed -->
+
+      <!-- prev / next -->
+      <div class="nav">
+        <button class="arrow" data-chrome="prev" title="Previous (←)">‹</button>
+        <span class="pos" id="pos">P1 · 1/5</span>
+        <button class="arrow" data-chrome="next" title="Next (→)">›</button>
+      </div>
+    </div>
+
+    <!-- ============ STAGE ============ -->
+    <div class="stage" id="stage"></div>
+  </div>
+
+  <!-- ============ FLOW MAP ============ -->
+  <div class="flowmap">
+    <div class="node" data-node="dashboard"><span>P1</span><small>Dashboard</small></div>
+    <span class="arw">→</span>
+    <div class="node" data-node="recommend"><span>P2</span><small>Recommend</small></div>
+    <span class="arw">→</span>
+    <div class="node" data-node="summary"><span>P3</span><small>Summary</small></div>
+    <span class="arw">→</span>
+    <div class="node" data-node="calendar"><span>P4</span><small>Calendar</small></div>
+  </div>
+
+  <script src="wf/screens.js"></script>
+  <script src="wf/app.js"></script>
+</body>
+</html>
